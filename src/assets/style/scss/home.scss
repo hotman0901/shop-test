@@ -1,0 +1,22 @@
+#home {
+    
+}
+
+/* #myCarousel { */
+    /* min-height: calc(100vh - 190px - 50px); */
+/* } */
+
+
+/* 改這樣是為了圖片在我瀏覽器固定高的範圍 */
+
+.img {
+    background: fixed center bottom;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /* min-height是全部高度再剪掉header與footer高度 */
+    min-height: calc(100vh - 190px - 50px);
+}
+
+h3{
+    font-size: 35px;
+}

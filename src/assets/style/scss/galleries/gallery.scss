@@ -1,0 +1,75 @@
+.card-shadow {
+    /* 原本thumbnail有含border把它用掉比較好看 */
+    border: 0;
+}
+
+ul {
+    margin-top: 20px;
+    padding: 0;
+    li {
+        list-style-type: none;
+        .detail {
+            display: inline-block;
+        }
+    }
+    input {
+        margin-right: 5px;
+        transform: translateY(-8px);
+    }
+}
+
+.price {
+    // display: block;
+    font-size: 25px;
+    float: right;
+}
+
+.size {
+    font-size: 13px;
+    font-weight: 300
+}
+
+.size-title {
+    font-size: 16px;
+    font-weight: 550;
+}
+
+// 
+// 
+// 
+// 遮罩start
+.mask-item {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        .overlay {
+            // 黑色透明度0.4
+            background: rgba(0, 0, 0, .4);
+        }
+        .fa-search-plus {
+            opacity: 1;
+        }
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease; // 讓他黑色透明度0
+    background: rgba(0, 0, 0, 0);
+}
+
+// 遮罩end
+// 
+// 
+.fa-search-plus {
+    font-size: 30px;
+    color: #fff;
+    opacity: 0;
+    transition: .5s ease;
+}

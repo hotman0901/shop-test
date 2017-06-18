@@ -1,0 +1,26 @@
+.jumbotron {
+    background: url('https://i.imgur.com/gK2bP0d.jpg') fixed center bottom;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-bottom: 0;
+    position: relative;
+}
+
+h2 {
+    font-size: 100px;
+    color: #fff;
+    font-weight: 700;
+}
+
+h3 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.error404 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 90px;
+    display: block;
+}

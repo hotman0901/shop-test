@@ -1,0 +1,114 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.ab-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+
+/*前面的fade是對應html 的name*/
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    transition: opacity .7s;
+}
+
+.fade-leave {
+    /*opacity: 1;*/
+}
+
+.fade-leave-active {
+    transition: opacity .7s;
+    opacity: 0;
+}
+
+.slide-enter {
+    opacity: 0;
+    /*transform: translateY(20px);*/
+}
+
+.slide-enter-active {
+    animation: slide-in .5s ease-out forwards;
+    transition: opacity .5s;
+}
+
+.slide-leave {}
+
+.slide-leave-active {
+    animation: slide-out .5s ease-out forwards;
+    transition: opacity 1s;
+    opacity: 0;
+    position: absolute;
+}
+
+
+/*使用shuffl要加上-move這個class*/
+
+.slide-move {
+    transition: transform 1s
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+.content-hight{
+	min-height: calc(100vh - 190px - 50px);
+    /* 使用fixed navbar 會讓content內容網上偏移，所以先擠回來 */
+    margin-top: calc(50px);
+    background-color: #ececec;
+}
+.card-shadow{
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.btn-black {
+    margin-top: 8px;
+    width: 100%;
+    transition: .3s;
+    font-weight: 300;
+    background-color: #222;
+    color: #fff;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #404040;
+        color: #fff;
+    }
+}

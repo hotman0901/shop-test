@@ -1,0 +1,48 @@
+@import './grid.scss';
+.logo {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 26px;
+    // border: 1px solid #fff;
+    // background-color: #FFF
+}
+
+nav.navbar {
+    transition: .5s;
+    a {
+        transition: .5s;
+    }
+}
+
+.nav-setting {
+    border-radius: 0;
+    border: none;
+    // 這裡改變是因為使用alert會遮不到
+    z-index: 1;
+}
+
+.fix-fix-top {
+    margin-right: 5px;
+}
+
+.cartNum {
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: red;
+    padding: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 10px;
+    @include pad {
+        top: 7px;
+        width: 14px;
+        height: 14px;
+    }
+}

@@ -1,0 +1,49 @@
+.container {
+    position: relative;
+}
+
+.form-group {
+    width: 75%; // border: 1px solid black;
+    margin: 0 auto;
+    padding: 20px 30px 30px 30px;
+    background-color: #fff;
+    border-radius: 2px; // margin-top: 30px;
+}
+
+label {
+    color: black;
+    font-weight: 300
+}
+
+input {
+    font-weight: 300;
+}
+
+.email {
+    padding-bottom: 10px;
+}
+
+.passWord {
+    padding: 15px 0 10px 0;
+}
+
+.btn-black {
+    // margin-top: 30px;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: #fff;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #4569b3;
+        color: #fff;
+    }
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    font-weight: 300;
+}
